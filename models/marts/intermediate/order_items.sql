@@ -61,12 +61,29 @@ order by
     orders.order_date)
 
 select
+    order_item_key,
+    order_key,
+    customer_key,
+    part_key,
+    supplier_key,
+    order_date,
+    order_status_code,
+    return_flag,
+    line_number,
+    order_item_status_code,
+    ship_date,
+    commit_date,
+    receipt_date,
+    ship_mode,
+    extended_price,
+    quantity,
     {{money('base_price')}} as base_price,
     discount_percentage,
     {{money('discounted_price')}} as discounted_price,
     {{money('gross_item_sales_amount')}} as gross_item_sales_amount,
     {{money('discounted_item_sales_amount')}} as discounted_item_sales_amount,
     {{money('item_discount_amount')}} as item_discount_amount,
+    tax_rate,
     {{money('item_tax_amount')}} as item_tax_amount,
     {{money('net_item_sales_amount')}} as net_item_sales_amount
 from joined_line_item
