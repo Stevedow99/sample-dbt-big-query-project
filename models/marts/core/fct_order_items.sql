@@ -17,12 +17,6 @@ part_supplier as (
 
 ),
 
-part_supplier as (
-    
-    select * from {{ ref('part_suppliers') }}
-
-),
-
 dim_customers as (
     
     select * from {{ ref('dim_customers') }}
