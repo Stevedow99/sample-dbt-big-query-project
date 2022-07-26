@@ -2,12 +2,12 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'sample_demo'
+name: 'sample_dbt_big_query_project'
 version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'sample_demo'
+profile: 'sample-dbt-big-query-project'
 
 
 # These configurations specify where dbt should look for different types of files.
@@ -54,7 +54,7 @@ vars:
 models:
 
   # setting my project name here
-  sample_demo:
+  sample_dbt_big_query_project:
 
     # my staging models/staging folder
     staging:
