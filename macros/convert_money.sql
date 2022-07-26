@@ -1,5 +1,5 @@
 {% macro money(col) -%}
-::decimal(16,3)
+ROUND(CAST({{col}} AS  NUMERIC),2)
 {%- endmacro %}
 
 

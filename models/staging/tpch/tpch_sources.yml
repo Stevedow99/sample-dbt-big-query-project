@@ -164,6 +164,7 @@ sources:
             description: '{{ doc("comment") }}'
 
       - name: partsupp
+        identifier: partsupply
         description: main part supplier table
         columns:
           - name: ps_partkey
