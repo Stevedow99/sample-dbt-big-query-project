@@ -35,6 +35,11 @@ final as (
         order_item.supplier_key,
         order_item.order_item_status_code,
         order_item.return_flag,
+        case 
+            when order_item.return_flag = 'R' then true
+            when order_item.return_flag = 'A' then false
+            else true
+        end as is_return,
         order_item.line_number,
         order_item.ship_date,
         order_item.commit_date,

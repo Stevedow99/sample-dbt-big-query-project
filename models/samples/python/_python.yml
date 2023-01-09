@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: sample_python_model
+    description: a sample python model
+    docs:
+      node_color: '#FFBF00'
