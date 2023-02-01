@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: agg_daily_returned_orders
+    config:
+      tags: ['data science', 'RevOps']
+
+  - name: forecast_daily_returns
+    config:
+      tags: ['data science', 'RevOps']
+      docs:
+        node_color: '#FFBF00'
