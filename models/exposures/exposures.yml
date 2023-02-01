@@ -1,6 +1,33 @@
 version: 2
 
 exposures:
+  - name: projected_daily_returns
+    tags: ['dataScience', 'RevOps']
+    description: |
+      # Projected Daily Returns Dashboard
+
+      ___
+
+      **The goal of this dashboard is to project product returns**
+
+    # type could be {dashboard, notebook, analysis, ml, application}
+    type: dashboard 
+    
+    # this is just a link to the thing itself for click through from documentation
+    url: https://app.mode.com/dbt_labs_mode_tutorials/reports/f30ea875263d
+    
+    # convenience feature - relative scale of {high, medium, low}
+    maturity: high
+    
+    # documentation purposes for point of contact if stuff breaks
+    owner:
+      name: Steve Dowling
+      email: steve.dowling@dbtlabs.com
+    
+    # IMPORTANT: determines the lineage relationship of the exposure construct to the rest of your DAGs
+    depends_on:
+      - ref('forecast_reporting_table')
+
   - name: company_sales_dashboard
     tags: ['finance', 'RevOps']
     description: |
