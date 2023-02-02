@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: table_constraints_demo
+    config:
+      has_constraints: true
+    columns:
+      - name: id
+        data_type: int64
+        description: I want to describe this one, but I don't want to list all the columns
+        meta:
+          constraint: not null
+      - name: color
+        data_type: string
+      - name: date_day
+        data_type: date
+      - name: new_col
+        data_type: string
