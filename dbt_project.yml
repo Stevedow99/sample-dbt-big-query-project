@@ -61,13 +61,27 @@ models:
       +materialized: view
       +schema: staging
 
+    UDFs:
+      +enabled: false
+
+    examples:
+      +enabled: false
+
+
+
     marts:
+      +enabled: false
+
       core:
         +materialized: table
         +schema: core_analytics
+        +enabled: false
+
       aggregates:
         +materialized: table
         +schema: aggregate_tables
+        +enabled: false
+
 
     
 seeds:
