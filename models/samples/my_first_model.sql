@@ -1,4 +1,8 @@
-
+{{
+    config(
+        materialized='table'
+    )
+}}
 
 
 Select 
